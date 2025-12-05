@@ -1,4 +1,4 @@
-require "language/python/virtualenv"
+require "language/python"
 
 class CryptnoxCli < Formula
   include Language::Python::Virtualenv
