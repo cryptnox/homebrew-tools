@@ -313,11 +313,7 @@ class CryptnoxCli < Formula
   end
 
   def install
-    # Create an isolated venv using Homebrew's Python
-    python = Formula["python@3.11"].opt_bin/"python3.11"
-    venv = virtualenv_create(libexec, python)
-    # Install this project + all its PyPI dependencies into that venv
-    venv.pip_install_and_link buildpath
+    virtualenv_install_with_resources
   end
 
   test do
