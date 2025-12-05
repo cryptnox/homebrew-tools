@@ -11,7 +11,12 @@ class CryptnoxCli < Formula
 
   # Matches python_requires >=3.11,<=3.13.7 from setup.cfg
   depends_on "python@3.11"
-  depends_on "rust" => :build  
+  depends_on "rust" => :build   # for cryptography
+  depends_on "swig" => :build   # for cryptnox-sdk-py, pyscard
+
+  on_linux do
+    depends_on "pcsc-lite"        # pcscd + libpcsclite on Linux
+  end
 
   resource "aiohappyeyeballs" do
     url "https://files.pythonhosted.org/packages/26/30/f84a107a9c4331c14b2b586036f40965c128aa4fee4dda5d3d51cb14ad54/aiohappyeyeballs-2.6.1.tar.gz"
@@ -314,7 +319,23 @@ class CryptnoxCli < Formula
   end
 
   def install
+    on_linux do
+      ENV.prepend_path "PKG_CONFIG_PATH", Formula["pcsc-lite"].opt_lib/"pkgconfig"
+    end
     virtualenv_install_with_resources
+  end
+
+  def caveats
+    <<~EOS
+      cryptnox-cli uses PC/SC smart card readers.
+
+      macOS:
+        Uses the system PC/SC service.
+
+      Linux (Homebrew on Linux):
+        Ensure pcscd is running. If installed via Homebrew:
+          brew services start pcsc-lite
+    EOS
   end
 
   test do
