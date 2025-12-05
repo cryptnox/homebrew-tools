@@ -1,5 +1,3 @@
-# homebrew-tools
-
 # Cryptnox Homebrew Tap
 
 Welcome to the official Homebrew Tap for Cryptnox CLI tools and software. This repository provides an easy way to install and manage Cryptnox tools using Homebrew.
