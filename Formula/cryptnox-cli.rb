@@ -93,9 +93,9 @@ class CryptnoxCli < Formula
     sha256 "419cd68178d2ee6ee4cae5d5cb1830725634b0a2840917156e89eb2592237ef3"
   end
 
-  resource "cryptnoxpy" do
-    url "https://files.pythonhosted.org/packages/ce/44/0391dff8f7cbca2e48d9ec803801c45f4d3acef4cae0653396d716d3ca01/cryptnoxpy-2.5.6.tar.gz"
-    sha256 "72e72f176820897b40374c6620337404fcfd0b9c006e5c7dd7e3aa508ad56ccf"
+  resource "cryptnox-sdk-py" do
+    url "https://files.pythonhosted.org/packages/f2/98/779d2e9b5d7481b9b7e288d30dda429963368d773a22898310ca09ea10a7/cryptnox_sdk_py-1.0.1.tar.gz"
+    sha256 "799b9bc38e81497b7677e65d2bd44bbc32d8ac9e52481967de2adb8ecbc519cb"
   end
 
   resource "cryptography" do
