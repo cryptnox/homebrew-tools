@@ -321,6 +321,7 @@ class CryptnoxCli < Formula
   def install
     on_linux do
       ENV.prepend_path "PKG_CONFIG_PATH", Formula["pcsc-lite"].opt_lib/"pkgconfig"
+      ENV.prepend_path "PATH", "#{Formula["swig"].bin}"
     end
     virtualenv_install_with_resources
   end
