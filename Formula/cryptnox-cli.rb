@@ -5,8 +5,8 @@ class CryptnoxCli < Formula
 
   desc "CLI for managing Cryptnox smart card wallets"
   homepage "https://github.com/cryptnox/cryptnox-cli"
-  url "https://github.com/cryptnox/cryptnox-cli/archive/refs/tags/v2.9.1.tar.gz"
-  sha256 "6e9cda7db8c412469f07504f14bb7ff16bc02b35245c28c1ea0933a882e67cab"
+  url "https://github.com/cryptnox/cryptnox-cli/archive/refs/tags/ver1.0.3.tar.gz"
+  sha256 "6f443883ba31f09d8ee985343fb393d47b3fffdb3621d27de003d2261b7c6263"
   license "LGPL-3.0-or-later"
 
   # Matches python_requires >=3.11,<=3.13.7 from setup.cfg
@@ -94,8 +94,8 @@ class CryptnoxCli < Formula
   end
 
   resource "cryptnox-sdk-py" do
-    url "https://files.pythonhosted.org/packages/f2/98/779d2e9b5d7481b9b7e288d30dda429963368d773a22898310ca09ea10a7/cryptnox_sdk_py-1.0.1.tar.gz"
-    sha256 "799b9bc38e81497b7677e65d2bd44bbc32d8ac9e52481967de2adb8ecbc519cb"
+    url "https://files.pythonhosted.org/packages/78/69/1a467187c80539339ee9f0569dc5cc0d63abd07404e1dd38b0b5fdb64573/cryptnox_sdk_py-1.0.2.tar.gz"
+    sha256 "00a607c50fc35940ff83c10820f965ea6fbfb383e4274eacef8adf7b09a91cbd"
   end
 
   resource "cryptography" do
