@@ -1,6 +1,14 @@
-# Cryptnox Homebrew Tap
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/6ce54a27-8fb6-48e6-9d1f-da144f43425a"/>
+</p>
 
-Welcome to the official Homebrew Tap for Cryptnox CLI tools and software. This repository provides an easy way to install and manage Cryptnox tools using Homebrew.
+<h3 align="center">Cryptnox Homebrew Tap</h3>
+<p align="center">Welcome to the official Homebrew Tap for Cryptnox CLI tools and software. This repository provides an easy way to install and manage Cryptnox tools using Homebrew.</p>
+
+<br/>
+<br/>
+
+[![Ruby](https://img.shields.io/badge/Ruby-red.svg?logo=ruby&logoColor=white)](https://www.ruby-lang.org/)
 
 ## Available Formulae
 
@@ -25,12 +33,11 @@ Or install it directly:
 brew install cryptnox/tools/cryptnox-cli
 ```
 
-## About Cryptnox
+## License
 
-Cryptnox is a leading provider of secure and innovative tools for modern developers. Our CLI tools are designed to enhance productivity and security.
+homebrew-tools is dual-licensed:
 
-For more information, visit our [website](https://cryptnox.com).
+- **LGPL-3.0** for open-source projects and proprietary projects that comply with LGPL requirements  
+- **Commercial license** for projects that require a proprietary license without LGPL obligations (see COMMERCIAL.md for details)
 
----
-
-Thank you for using Cryptnox tools!
+For commercial inquiries, contact: contact@cryptnox.com
